@@ -28,16 +28,20 @@ public class Main {
         //making change in collection2 does not affect collection3
 
         Iterator<String> iterator = collection3.iterator();
-        System.out.println("All cities by iterator() : ");
+        System.out.println("All cities with iterator() : ");
         while(iterator.hasNext()){
             System.out.println(iterator.next().toUpperCase());
         }
         //Each collection implement the Iterable interface which has an
         //iterator() which return an Iterator instance for traversing collection
 
+        System.out.println("All cities without iterator");
         for(String elements : collection3)
             System.out.println(elements.toUpperCase());
         //Traverse collection without iterator
+
+        System.out.println("All cities with forEach : ");
+        collection3.forEach(e -> System.out.println(e.toUpperCase()));
 
 
     }
