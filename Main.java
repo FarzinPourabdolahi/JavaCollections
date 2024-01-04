@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +26,15 @@ public class Main {
         System.out.println("The collection3 contains : \n" + collection3 +"\n");
         //addAll() adds a copy of collection2 into collection3. It means that
         //making change in collection2 does not affect collection3
+
+        Iterator<String> iterator = collection3.iterator();
+        System.out.println("All cities by iterator() : ");
+        while(iterator.hasNext()){
+            System.out.println(iterator.next().toUpperCase());
+        }
+        //Each collection implement the Iterable interface which has an
+        //iterator() which return an Iterator instance for traversing collection
+
 
     }
 }
