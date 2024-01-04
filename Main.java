@@ -35,6 +35,10 @@ public class Main {
         //Each collection implement the Iterable interface which has an
         //iterator() which return an Iterator instance for traversing collection
 
+        for(String elements : collection3)
+            System.out.println(elements.toUpperCase());
+        //Traverse collection without iterator
+
 
     }
 }
