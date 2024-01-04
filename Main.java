@@ -42,6 +42,8 @@ public class Main {
 
         System.out.println("All cities with forEach : ");
         collection3.forEach(e -> System.out.println(e.toUpperCase()));
+        //Traverse collection with forEach
+
 
 
     }
