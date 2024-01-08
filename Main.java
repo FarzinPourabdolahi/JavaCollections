@@ -54,9 +54,19 @@ public class Main {
             System.out.println(p2.getName()+" is older than "+ p1.getName());
         else
             System.out.println(p1.getName()+" and "+ p2.getName()+" are in the same age");
-
         //Compare a class which does not implement Comparable interface
         //with a comparator class which implements Comparator interface
+
+        List<String> cities = java.util.Arrays.asList("Dallas", "Chicago", "New York", "Atalanta");
+        cities.sort((s1, s2)->s1.compareToIgnoreCase(s2));
+        cities.forEach((city)-> System.out.println(city));
+        //Sorting a list by natural order and lambda expression
+        System.out.println("-------------------------------------");
+        cities.sort(Comparator.comparing(String::length));
+        cities.forEach((city)-> System.out.println(city));
+        //Sort cities with method reference and comparing method of Comparator
+        //interface by cities length
+
 
 
 
