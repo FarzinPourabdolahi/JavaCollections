@@ -48,6 +48,13 @@ public class Main {
         Person p2 = new Person("Elena", 10);
         PersonComparator pc = new PersonComparator();
         int result = pc.compare(p1, p2);
+        if(result==-1)
+            System.out.println(p1.getName()+" is older than "+ p2.getName());
+        else if (result==1)
+            System.out.println(p2.getName()+" is older than "+ p1.getName());
+        else
+            System.out.println(p1.getName()+" and "+ p2.getName()+" are in the same age");
+
         //Compare a class which does not implement Comparable interface
         //with a comparator class which implements Comparator interface
 
