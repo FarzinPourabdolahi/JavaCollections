@@ -44,6 +44,14 @@ public class Main {
         collection3.forEach(e -> System.out.println(e.toUpperCase()));
         //Traverse collection with forEach
 
+        Person p1 = new Person("Farzin", 40);
+        Person p2 = new Person("Elena", 10);
+        PersonComparator pc = new PersonComparator();
+        int result = pc.compare(p1, p2);
+        //Compare a class which does not implement Comparable interface
+        //with a comparator class which implements Comparator interface
+
+
 
 
     }
