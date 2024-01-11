@@ -75,6 +75,10 @@ public class Main {
         //Sort cities with Collections' static methods with natural order and
         //with a comparator
 
+        List<Person> list1 = Collections.nCopies(3, new Person("Ali", 10));
+        System.out.println(list1);
+        //nCopies() method which is a static one in Collections class
+
 
 
     }
