@@ -67,7 +67,13 @@ public class Main {
         //Sort cities with method reference and comparing method of Comparator
         //interface by cities length
 
+        Collections.sort(cities);
+        System.out.println(cities);
 
+        Collections.sort(cities, Collections.reverseOrder());
+        System.out.println(cities);
+        //Sort cities with Collections' static methods with natural order and
+        //with a comparator
 
 
 
